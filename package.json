@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ZeroProger.github.io/test-uchi-ru",
   "name": "test-uchi-ru",
   "version": "0.1.0",
   "private": true,
@@ -10,13 +11,23 @@
     "@types/node": "^16.11.36",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.1.3",
+    "mobx": "^6.6.0",
+    "mobx-react-lite": "^3.4.0",
     "react": "^18.1.0",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
+    "react-icons": "^4.3.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.7.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

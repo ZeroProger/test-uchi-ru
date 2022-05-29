@@ -1,0 +1,78 @@
+.cats__list {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.cats__item {
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cats__img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cats__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.cats__load-btn {
+    border: 2px solid var(--primary-500);
+    background-color: #fff;
+    color: var(--primary-500);
+}
+
+.cats__load-btn:hover {
+    background-color: var(--primary-500);
+    color: #fff;
+}
+
+.cats__load-btn:active,
+.cats__load-btn:focus {
+    background-color: var(--primary-600);
+    color: #fff;
+}
+
+.cats__like-btn {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.cats__like-btn svg {
+    fill: var(--color-red);
+    opacity: 0;
+    width: 32px;
+    height: 32px;
+    visibility: hidden;
+    transition: all 0.3s ease-in;
+}
+
+.cats__like-btn:hover,
+.cats__like-btn:active,
+.cats__like-btn:focus,
+.cats__like-btn:active:focus {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.cats__item:hover .cats__like-btn svg {
+    opacity: 1;
+    visibility: visible;
+}

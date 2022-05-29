@@ -1,0 +1,14 @@
+.navbar {
+    background-color: var(--primary-500);
+}
+
+.navbar-nav {
+    align-items: start;
+}
+
+.nav-link {
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
