@@ -9,6 +9,14 @@
     max-height: 200px;
     overflow: hidden;
     position: relative;
+    transition: all 0.3s ease-in;
+}
+
+.cats__item:hover,
+.cats__item:active,
+.cats__item:focus {
+    transform: scale(1.07);
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
 }
 
 .cats__img {

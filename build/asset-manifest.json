@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/test-uchi-ru/static/css/main.9284154f.css",
-    "main.js": "/test-uchi-ru/static/js/main.be60e168.js",
+    "main.css": "/test-uchi-ru/static/css/main.37be2f5a.css",
+    "main.js": "/test-uchi-ru/static/js/main.6d6b07d1.js",
     "index.html": "/test-uchi-ru/index.html",
-    "main.9284154f.css.map": "/test-uchi-ru/static/css/main.9284154f.css.map",
-    "main.be60e168.js.map": "/test-uchi-ru/static/js/main.be60e168.js.map"
+    "main.37be2f5a.css.map": "/test-uchi-ru/static/css/main.37be2f5a.css.map",
+    "main.6d6b07d1.js.map": "/test-uchi-ru/static/js/main.6d6b07d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.9284154f.css",
-    "static/js/main.be60e168.js"
+    "static/css/main.37be2f5a.css",
+    "static/js/main.6d6b07d1.js"
   ]
 }

@@ -36,3 +36,13 @@
     color: #fff;
     background-color: var(--primary-600);
 }
+
+@media screen and (max-width: 768px) {
+    .nav-item {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 1rem 0.5rem;
+    }
+}

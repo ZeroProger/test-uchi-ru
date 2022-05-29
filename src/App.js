@@ -3,15 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Css/fonts.css"
 import './Css/App.css';
 import Header from "./Components/Header";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter} from "react-router-dom";
 import AppRouter from "./Components/AppRouter";
 
 function App() {
     return (
-        <BrowserRouter basename="/test-uchi-ru">
+        <HashRouter>
             <Header/>
             <AppRouter/>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
