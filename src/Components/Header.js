@@ -1,12 +1,10 @@
 import React from 'react';
 import "../Css/header.css"
 import {Container, Nav, Navbar} from "react-bootstrap";
-import {Link, useLocation} from "react-router-dom";
+import {Link, NavLink, useLocation} from "react-router-dom";
 
 const Header = () => {
-
-    const location = useLocation()
-    const path = location.pathname
+    const activeClassName = 'nav-link nav-link-active'
 
     return (
         <Navbar expand="md" fixed="top">
@@ -15,8 +13,12 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Item><Link to="/" className="nav-link">Все котики</Link></Nav.Item>
-                        <Nav.Item><Link to="/favourites" className="nav-link">Любимые котики</Link></Nav.Item>
+                        <Nav.Item><NavLink to="/" className={({ isActive }) =>
+                            isActive ? activeClassName : "nav-link"
+                        }>Все котики</NavLink></Nav.Item>
+                        <Nav.Item><NavLink to="/favourites" className={({ isActive }) =>
+                            isActive ? activeClassName : "nav-link"
+                        }>Любимые котики</NavLink></Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

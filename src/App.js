@@ -8,7 +8,7 @@ import AppRouter from "./Components/AppRouter";
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/test-uchi-ru">
             <Header/>
             <AppRouter/>
         </BrowserRouter>
